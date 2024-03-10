@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        .logo img {
+height: 8rem;
+width: 12rem;
+mix-blend-mode: multiply;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center ;
+            align-items: center;
+            
+        }
+
+        .form{
+            margin: 20px;
+            width: 400px;
+            padding: 10px;
+        }
+
+        .suopt{
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            background-color: white;
+            
+        }
+
+    div.credentials{
+       text-align: left;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+input[placeholder]{
+    padding: 15px;
+    margin: 10px;
+    text-align: left;
+    border-radius: 7px;
+    font-size: 1.2rem;
+}
+
+.dob{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.align{
+    text-align: left;
+   font-size: 1.2rem;
+}
+
+.sex{
+    text-align: left;
+    margin: 20px;
+    margin-left: 0px;
+}
+span{
+   text-decoration: none;
+    color: rgb(112, 185, 3);
+}
+
+.signupbutton{
+
+   border: none;
+   background-color: rgb(105, 173, 2);
+   color: white;
+   padding: 20px 150px;
+   border-radius: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+<div class="logo">
+    <img src="https://cdn.freebiesupply.com/logos/large/2x/ace-logo-png-transparent.png">
+</div>
+<hr>
+
+<a href="#">
+<input type="button" class="suopt" value=" Sign up with facebook" 
+style=" background-color: rgb(117, 117, 161); color: white; border-radius: 30px; padding: 15px; margin: 15px; width: 300px; text-align: center;border: none;
+margin-left: 40px;" > </a>
+<p style="font-weight: 900;">
+
+    
+    ----------------------------------- or -----------------------------------</p>
+
+<a href="#"><input type="button" class="suopt" value="Sign up with your email address  ">
+<div class="align"></a>
+<div class="credentials">
+<input type="email" name="enail" id="#" placeholder="Email "> <br>
+
+<input type="email" name="confirm" id="#" placeholder="Confirm Email "> <br>
+
+<input type="password" name="pass" id="#" placeholder="Password"> <br>
+
+<input type="text" name="username" id="#" placeholder="What should we call you?"> <br>
+</div>
+<label for="dob" ><p style="text-align: left;">Date of birth:</p></label>
+<div class="dob" id="dob">
+   <select name="month" id="#" class="month" style="font-size: 1.2rem; border-radius: 7px; padding: 15px; margin: 10px;"
+  
+   >
+       <option value="">January </option>
+       <option value="">February </option>
+       <option value="">March </option>
+       <option value="">April</option>
+       <option value="">May</option>
+       <option value="">June</option>
+       <option value="">July</option>
+       <option value="">August</option>
+      
+       <option value="">September</option>
+       <option value="">October </option>
+       <option value="">November </option>
+       <option value="">December </option>
+    
+   </select>
+
+   <input type="text"  name="day" id="#" placeholder="Day"  style="width:60px">
+   <input type="text" name="year" id="#" placeholder="Year" style="width:60px">
+</div>
+
+
+<div class="sex">
+    <input type="radio" name="sex" id="#" ><label>Male</label>
+    <input type="radio" name="sex" id="#"> <label>Female</label>
+    <input type="radio" name="sex" id="#"><label>Non-Binary</label>
+</div>
+</div>
+
+<input type="checkbox" name="TAC" id="#"><label for="" style="margin-left: 10px;">Share my registration data with Ace's content providers for  marketing purposes</label>
+
+
+<p style="margin-top: 30px; text-decoration: none;">By clicking sign up you agree to Ace's <a href="#" style="text-decoration: none;"><span style="text-decoration: none;">Terms and Conditions of Uses.</span></a></p>
+
+<p style=" margin-bottom: 30px">To learn how Ace collects , uses shares and protects your personal data  please read Ace's <a href="#"  style="text-decoration: none;"><span>Privacy Policy</span></a></p>
+<input type="button"  class="signupbutton" value="SIGN UP">
+</div>
+
+</div>
+</body>
+</html>
