@@ -5,116 +5,198 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="index.css">
     <style>
         *{
-            text-align: center;
-        }
-        .logo img {
+    text-align: center;
+}
+/* for logo*/
+.logo img {
 height: 8rem;
 width: 12rem;
 mix-blend-mode: multiply;
 
-        }
-
-        .container {
-            display: flex;
-            justify-content: center ;
-            align-items: center;
-            
-        }
-
-        .form{
-            margin: 20px;
-            width: 400px;
-            padding: 10px;
-        }
-
-        .suopt{
-            font-size: 1.2rem;
-            font-weight: bold;
-            border: none;
-            background-color: white;
-            
-        }
-
-    div.credentials{
-       text-align: left;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    }
-input[placeholder]{
-    padding: 15px;
-    margin: 10px;
-    text-align: left;
-    border-radius: 7px;
-    font-size: 1.2rem;
 }
-
-.dob{
+/*for form container*/
+.container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center ;
+    align-items: center;
+      
+}
+/*for form */
+.form{
+    margin: 20px;
+    width: 400px;
+    padding: 10px;
     
 }
+/*for facebook signup button*/
+.suopt{
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+  
+    
+}
+
+#fb{
+    background-color: rgb(117, 117, 161); 
+    color: white;
+     border-radius: 30px;
+      padding: 15px;
+       margin-top: 60px; 
+       width: 300px;
+ text-align: center;
+ border: none;
+  margin-left: 40px;
+}
+#fb:hover{
+    background-color: rgb(255, 127, 80);
+    color: whitesmoke;
+}
+
+/* for or paragraph with hr's on both sides */
+.hr-lines{
+    position: relative;
+    max-width: 500px;
+    margin: 100px auto;
+    
+    text-align: center;
+    }
+    
+    .hr-lines:before{
+    content:" ";
+    height: 1px;
+    width: 170px;
+    background: rgb(160, 159, 159);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    }
+    
+    .hr-lines:after{
+    content:" ";
+    height: 1px;
+    width: 170px;
+    background: rgb(160, 158, 158);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    }
+
+/* for credentials only */
+div.credentials{
+text-align: left;
+display: flex;
+flex-direction: column;
+padding: 10px;
+}
+
+/* to align and increase the size of all form elements with placeholder */
+input[placeholder]{
+padding: 15px;
+margin: 10px;
+text-align: left;
+border-radius: 7px;
+font-size: 1.2rem;
+}
+/*to flex the DOB form in single line*/
+.dob{
+display: flex;
+justify-content: space-around;
+
+}
+/* back up align for placeholders  */
 .align{
-    text-align: left;
-   font-size: 1.2rem;
+text-align: left;
+font-size: 1.2rem;
 }
-
+/* style for sex form */
 .sex{
-    text-align: left;
-    margin: 20px;
-    margin-left: 0px;
-}
-span{
-   text-decoration: none;
-    color: rgb(112, 185, 3);
+text-align: left;
+margin: 20px;
+margin-left: 0px;
 }
 
+/* style for T&C and privacy policy links */
+span{
+text-decoration: none;
+color: rgb(112, 185, 3);
+}
+
+
+/* style for sign up button */
 .signupbutton{
 
-   border: none;
-   background-color: rgb(105, 173, 2);
-   color: white;
-   padding: 20px 150px;
-   border-radius: 30px;
+border: none;
+background-color: rgb(105, 173, 2);
+color: white;
+padding: 20px 150px;
+border-radius: 30px;
 }
 
+input[type="button"]:hover{
+    background-color: coral;
+    color: whitesmoke;
+}
+
+
     </style>
+
 </head>
+
+
+
 <body>
+    <!-- form container -->
     <div class="container">
+
+        <!-- form -->
         <div class="form">
+
+            <!-- logo -->
 <div class="logo">
     <img src="https://cdn.freebiesupply.com/logos/large/2x/ace-logo-png-transparent.png">
 </div>
 <hr>
+<!-- fb sign up button -->
+<a href="https://facebook.com/login">
+  
+<input type="button" class="suopt" value=" Sign up with facebook" id="fb">
+ </a>
 
-<a href="#">
-<input type="button" class="suopt" value=" Sign up with facebook" 
-style=" background-color: rgb(117, 117, 161); color: white; border-radius: 30px; padding: 15px; margin: 15px; width: 300px; text-align: center;border: none;
-margin-left: 40px;" > </a>
-<p style="font-weight: 900;">
+<!-- or line -->
+<p class="hr-lines">or</p>
+
 
     
-    ----------------------------------- or -----------------------------------</p>
+    <!-- actual form starts here -->
+    <p class="supot" style="font-weight: bold; font-size: 1.2rem; margin-top: 0%;">Sign up with your email address </p>
+    <div class="align">
 
-<a href="#"><input type="button" class="suopt" value="Sign up with your email address  ">
-<div class="align"></a>
+        <!-- credentials -->
 <div class="credentials">
-<input type="email" name="enail" id="#" placeholder="Email "> <br>
+<input type="email" name="enail" id="#" placeholder="Email " required> <br>
 
-<input type="email" name="confirm" id="#" placeholder="Confirm Email "> <br>
+<input type="email" name="confirm" id="#" placeholder="Confirm Email " required> <br>
 
-<input type="password" name="pass" id="#" placeholder="Password"> <br>
+<input type="password" name="pass" id="#" placeholder="Password" minlength="8" maxlength="30"> <br>
 
-<input type="text" name="username" id="#" placeholder="What should we call you?"> <br>
+<input type="text" name="username" id="#" placeholder="What should we call you?" required maxlength="20" <br>
 </div>
 <label for="dob" ><p style="text-align: left;">Date of birth:</p></label>
+
+<!-- DOB -->
 <div class="dob" id="dob">
-   <select name="month" id="#" class="month" style="font-size: 1.2rem; border-radius: 7px; padding: 15px; margin: 10px;"
+   <select name="month" placeholder="Month" id="#" class="month" style="font-size: 1.2rem; border-radius: 7px; padding: 15px; margin: 10px;"
   
    >
+   <!-- options for month -->
+    <option value="" disabled selected hidden>Month</option>
        <option value="">January </option>
        <option value="">February </option>
        <option value="">March </option>
@@ -130,26 +212,31 @@ margin-left: 40px;" > </a>
        <option value="">December </option>
     
    </select>
-
+<!-- Day and year -->
    <input type="text"  name="day" id="#" placeholder="Day"  style="width:60px">
    <input type="text" name="year" id="#" placeholder="Year" style="width:60px">
 </div>
 
-
+<!-- gender -->
 <div class="sex">
     <input type="radio" name="sex" id="#" ><label>Male</label>
     <input type="radio" name="sex" id="#"> <label>Female</label>
     <input type="radio" name="sex" id="#"><label>Non-Binary</label>
 </div>
 </div>
+<!-- agreement -->
+<input type="checkbox" name="TAC" id="tac"><label for="tac" style="margin-left: 10px;">Share my registration data with Ace's content providers for
+      marketing purposes</label>
 
-<input type="checkbox" name="TAC" id="#"><label for="" style="margin-left: 10px;">Share my registration data with Ace's content providers for  marketing purposes</label>
+<!-- T&C and privacy policy  -->
+<p style="margin-top: 30px; text-decoration: none;">By clicking sign up you agree to Ace's
+     <a href="#" style="text-decoration: none;"><span style="text-decoration: none;">Terms and Conditions of Uses.</span></a></p>
 
+<p style=" margin-bottom: 30px">To learn how Ace collects , uses shares and protects your personal data  please read Ace's 
+    <a href="#"  style="text-decoration: none;"><span>Privacy Policy</span></a></p>
 
-<p style="margin-top: 30px; text-decoration: none;">By clicking sign up you agree to Ace's <a href="#" style="text-decoration: none;"><span style="text-decoration: none;">Terms and Conditions of Uses.</span></a></p>
-
-<p style=" margin-bottom: 30px">To learn how Ace collects , uses shares and protects your personal data  please read Ace's <a href="#"  style="text-decoration: none;"><span>Privacy Policy</span></a></p>
-<input type="button"  class="signupbutton" value="SIGN UP">
+<!-- Submit Button -->
+    <input type="button"  class="signupbutton" value="SIGN UP" >
 </div>
 
 </div>
